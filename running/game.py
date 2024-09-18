@@ -13,17 +13,17 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Game')
 
 # Load sprite images
-RUNNING = [pygame.image.load("running/sprite_1.png"), pygame.image.load('running/sprite_2.png'),
-           pygame.image.load('running/sprite_3.png'), pygame.image.load('running/sprite_4.png'),
-           pygame.image.load('running/sprite_5.png'), pygame.image.load('running/sprite_6.png')]
-JUMP = pygame.image.load('running/jump.png')
-DUCKING = pygame.image.load('running/duck.png')
-GHOST = [pygame.image.load('running/ghost1.png'), pygame.image.load('running/ghost2.png'), pygame.image.load('running/ghost3.png'),
-         pygame.image.load('running/ghost4.png')]
-CACTUS = [pygame.image.load('running/c1.png'), pygame.image.load('running/c2.png'), pygame.image.load('running/c3.png'),
-          pygame.image.load('running/c4.png'), pygame.image.load('running/c5.png'), pygame.image.load('running/c6.png'),
-          pygame.image.load('running/c7.png'), pygame.image.load('running/c8.png'), pygame.image.load('running/c9.png'),
-          pygame.image.load('running/c10.png'), pygame.image.load('running/c11.png'), pygame.image.load('running/c12.png')]
+RUNNING = [pygame.image.load("sprite_1.png"), pygame.image.load('sprite_2.png'),
+           pygame.image.load('sprite_3.png'), pygame.image.load('sprite_4.png'),
+           pygame.image.load('sprite_5.png'), pygame.image.load('sprite_6.png')]
+JUMP = pygame.image.load('jump.png')
+DUCKING = pygame.image.load('duck.png')
+GHOST = [pygame.image.load('ghost1.png'), pygame.image.load('ghost2.png'), pygame.image.load('ghost3.png'),
+         pygame.image.load('ghost4.png')]
+CACTUS = [pygame.image.load('c1.png'), pygame.image.load('c2.png'), pygame.image.load('c3.png'),
+          pygame.image.load('c4.png'), pygame.image.load('c5.png'), pygame.image.load('c6.png'),
+          pygame.image.load('c7.png'), pygame.image.load('c8.png'), pygame.image.load('c9.png'),
+          pygame.image.load('c10.png'), pygame.image.load('c11.png'), pygame.image.load('c12.png')]
 
 # Create a class for the hero
 class Hero:
