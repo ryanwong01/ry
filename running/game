@@ -262,13 +262,13 @@ def menu(death_count):
                 points = 0
                 return
 
-
+# Start the menu
 menu(0)
 
-
+# Enter the game loop
 while True:
     points = 0
     main_game()
 
-
+# Cleanup
 pygame.quit()
