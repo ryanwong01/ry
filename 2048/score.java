@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Score {
+class Score {
     private int score;
     private JLabel scoreLabel;
 

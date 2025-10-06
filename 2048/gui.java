@@ -1,27 +1,17 @@
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
-public class GUI extends JFrame {
+public class GUI extends JFrame implements KeyListener {
     private JFrame frame;
     private Game game;
-  
-    //private FileHandler fileHandler;
+    private Board board;
 
-    /**
-    public GUI(Game game, FileHandler fileHandler) {
-        this.game = game;
-        this.fileHandler = fileHandler;
-    }
-    **/
-    
-    //test con
     public GUI(Game game) {
         this.game = game;
+        this.board = game.getBoard();
+        this.board.addKeyListener(this);
     }
-   
 
     public void createAndShowGUI() {
         frame = new JFrame("2048");
@@ -29,25 +19,34 @@ public class GUI extends JFrame {
         frame.setSize(400, 400);
         frame.setResizable(false);
 
-        Board board = game.getBoard();
-        frame.add(board);
-
-        /**
-        JMenuBar menuBar = new JMenuBar();
-        JMenu fileMenu = new JMenu("File");
-        
-        JMenuItem highScoresItem = new JMenuItem("High Scores");
-        highScoresItem.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String highScores = fileHandler.getHighScores();
-                JOptionPane.showMessageDialog(frame, highScores, "High Scores", JOptionPane.PLAIN_MESSAGE);
-            }
-        });
-        fileMenu.add(highScoresItem);
-        menuBar.add(fileMenu);
-        frame.setJMenuBar(menuBar);
+        frame.getContentPane().setLayout(new BorderLayout());
+        frame.getContentPane().add(board, BorderLayout.CENTER);
 
         frame.setVisible(true);
-        **/
+        board.requestFocusInWindow(); // Request focus for keyboard input
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        int keyCode = e.getKeyCode();
+        if (keyCode == KeyEvent.VK_UP) {
+            // Handle up key
+        } else if (keyCode == KeyEvent.VK_DOWN) {
+            // Handle down key
+        } else if (keyCode == KeyEvent.VK_LEFT) {
+            // Handle left key
+        } else if (keyCode == KeyEvent.VK_RIGHT) {
+            // Handle right key
+        }
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+        // Not used
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        // Not used
     }
 }

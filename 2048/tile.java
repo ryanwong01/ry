@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -32,19 +31,21 @@ public class Tile extends JPanel {
         } else if (this.getTileValue() == 16) {
             tileColor = new Color(245, 149, 99);
         } else if (this.getTileValue() == 32) {
-            tileColor = new Color(246, 124, 96);
+            tileColor = new Color(245, 124, 95);
         } else if (this.getTileValue() == 64) {
             tileColor = new Color(246, 94, 59);
         } else if (this.getTileValue() == 128) {
-            tileColor = new Color(237, 207, 115);
+            tileColor = new Color(237, 207, 114);
         } else if (this.getTileValue() == 256) {
-            tileColor = new Color(237, 204, 98);
+            tileColor = new Color(237, 204, 97);
         } else if (this.getTileValue() == 512) {
             tileColor = new Color(237, 200, 80);
         } else if (this.getTileValue() == 1024) {
             tileColor = new Color(237, 197, 63);
+        } else if (this.getTileValue() == 2048) {
+            tileColor = new Color(237, 194, 46);
         } else {
-            tileColor = new Color(237, 194, 45);
+            tileColor = new Color(205, 193, 180);
         }
     }
 

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Tile
+comment1.params=
+comment1.target=Tile()
+comment2.params=number
+comment2.target=Tile(int)
+comment3.params=
+comment3.target=int\ getTileValue()
+comment4.params=value
+comment4.target=void\ setTileValue(int)
+comment5.params=
+comment5.target=void\ setColor()
+comment6.params=
+comment6.target=java.awt.Color\ getTileColor()
+comment7.params=g
+comment7.target=void\ paintComponent(java.awt.Graphics)
+numComments=8
